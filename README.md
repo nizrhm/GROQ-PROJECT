@@ -33,8 +33,8 @@ This application showcases:
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/your-username/chatgroq-demo.git
-    cd chatgroq-demo
+    git clone https://github.com/nizrhm/groq-project.git
+    cd groq-project
     ```
 
 2. Create and activate a virtual environment:
