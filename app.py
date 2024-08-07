@@ -25,7 +25,7 @@ if "vector" not in st.session_state:
     st.session_state.final_documents=st.session_state.text_splitter.split_documents(st.session_state.docs[:50])
     st.session_state.vectors=FAISS.from_documents(st.session_state.final_documents,st.session_state.embeddings)
 
-st.title("ChatGroq Demo")
+st.title("GROQ PROJECT")
 llm=ChatGroq(groq_api_key=groq_api_key,
              model_name="mixtral-8x7b-32768")
 
@@ -44,7 +44,7 @@ document_chain = create_stuff_documents_chain(llm, prompt)
 retriever = st.session_state.vectors.as_retriever()
 retrieval_chain = create_retrieval_chain(retriever, document_chain)
 
-prompt=st.text_input("Input you prompt here")
+prompt=st.text_input("How can I help you today?")
 
 if prompt:
     start=time.process_time()
