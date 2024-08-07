@@ -1,4 +1,4 @@
-# ChatGroq Demo
+# CHAT GROQ
 
 This repository demonstrates how to create a modern Streamlit application that uses the ChatGroq language model to answer questions based on the provided context. The project involves loading, preprocessing, and vectorizing documents to enable efficient document retrieval and question answering.
 
